@@ -1,5 +1,6 @@
 body {
   font-family: Helvetica;
+  font-size: 22px;
   opacity: 0.9;
   color: seashell;
   background-color: black;
@@ -7,8 +8,6 @@ body {
 }
 
 /* rules for header */
-
-/*need to 'fix' header */
 
 .header {
   display: flex;
@@ -18,7 +17,6 @@ body {
   height: 69px;
   width: 100%;
   border-bottom: 1px solid seashell;
-  border: 1px dotted lime;
 }
 
 .header a {
@@ -33,7 +31,6 @@ body {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-tea-cozy-logo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  border: 1px dotted lime;
 }
 
 nav {
@@ -41,10 +38,9 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 400px;
+  width: 550px;
   height: 69px;
   margin: 0px 10px;
-  border: 1px dotted lime;
 }
 
 /* rules for mission */
@@ -57,12 +53,11 @@ nav {
   justify-content: center;
   height: 700px;
   width: 1200px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px dotted lime;
 }
 
 .banner {
@@ -71,11 +66,10 @@ nav {
   align-items: center;
   justify-content: center;
   z-index: 1;
-  height: 90px;
+  height: 120px;
   width: 100%;
   background-color: black;
   opacity: 0.9;
-  border: 1px dotted lime;
 }
 
 .banner h4 {
@@ -95,11 +89,23 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100px;
   width: 100%;
   padding-top: 30px;
   padding-bottom: 20px;
-  border: 1px dotted lime;
+}
+
+.featured-banner h2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.featured-banner h4 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
 }
 
 .featured-content {
@@ -108,21 +114,19 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 510px;
+  height: 600px;
 }
 
 .featured-row1 {
   display: flex;
   width: 1000px;
   justify-content: space-between;
-  border: 1px dotted lime;
 }
 
 .tea-small-card {
   display: inline-block;
   flex-direction: column;
-  width: 300px;
-  border: 1px dotted lime;
+  width: 325px;
 }
 
 .fall-berry {
@@ -180,19 +184,64 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 75px;
+  padding-top: 10px;
   background-color: black;
-  border: 1px dotted lime;
 }
 
 .featured-row2 {
   display: flex;
   width: 650px;
   justify-content: space-between;
-  border: 1px dotted lime;
 }
 
 /* rules for location */
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 1200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.location-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  margin: 0px 0px;
+}
+
+.location-cards {
+  display: flex;
+  flex-direction: row;
+  z-index: 3;
+  justify-content: space-between;
+  width: 980px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 250px;
+  padding-bottom: 40px;
+  background-color: black;
+}
+
+.card h4 {
+  font-size: 18px;
+}
 
 /* rules for footer */
 
@@ -201,11 +250,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 120px;
+  height: 200px;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 30px;
-  border: 1px dotted lime;
+  padding: 25px;
 }
 
 .copyright {
@@ -214,5 +261,4 @@ footer {
   align-items: left;
   padding: 20px;
   height: 50px;
-  border: 1px dotted lime;
 }
